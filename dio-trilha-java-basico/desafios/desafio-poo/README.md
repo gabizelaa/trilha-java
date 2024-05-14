@@ -1,18 +1,12 @@
-## Getting Started
+## POO - Desafio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Modelagem e diagramação da representação em UML e Código no que se refere ao componente iPhone.
 
-## Folder Structure
+Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma ferramenta de UML de sua preferência a diagramação das classes e interfaces com a proposta de representar os papéis do iPhone de: Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Em seguida crie as classes e interfaces no formato de arquivos .java
 
-The workspace contains two folders by default, where:
+[Lançamento iPhone 2007](https://www.youtube.com/watch?v=9ou608QQRq8)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+###### Comportamentos esperados:
+* Reprodutor Musicial: tocar, pausar, selecionarMusica
+* Aparelho Telefônico: ligar, atender, iniciarCorreioVoz
+* Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
