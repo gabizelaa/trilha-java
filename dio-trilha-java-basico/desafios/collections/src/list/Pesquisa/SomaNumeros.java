@@ -21,12 +21,12 @@ public class SomaNumeros {
         int soma = 0;
         for(Integer numero : numeroList){
             soma += numero;
-            return soma;
         }
+        return soma;
     }
 
     public int encontrarMaiorNumero(){
-        int maiorNumero = Integer.MAX_VALUE;
+        int maiorNumero = Integer.MIN_VALUE;
         if (!numeroList.isEmpty()) {
             for (Integer numero : numeroList) {
                 if (numero >= maiorNumero) {
@@ -34,6 +34,8 @@ public class SomaNumeros {
                 }
             }
             return maiorNumero;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
     }
 
@@ -46,6 +48,8 @@ public class SomaNumeros {
                 }
             }
             return menorNumero;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
     }
 
@@ -75,6 +79,5 @@ public class SomaNumeros {
 
         System.out.println("Menor número = " + somaNumeros.encontrarMenorNumero());
     }
-}
 }
 
