@@ -26,11 +26,11 @@ public class ListaTarefas {
         tarefaSet.remove(tarefaParaRemover);
     }
 
-    public void exibirTarefas(){
+    public void exibirTarefas() {
         System.out.println(tarefaSet);
     }
 
-    public int contarTarefas(){
+    public int contarTarefas() {
         return tarefaSet.size();
     }
 
@@ -79,89 +79,6 @@ public class ListaTarefas {
             tarefaSet.clear();
         }
     }
-    package set.Pesquisa;
-
-import java.util.HashSet;
-import java.util.Set;
-
-    public class ListaTarefas {
-        //atributo
-        private Set<Tarefa> tarefaSet;
-
-        public ListaTarefas() {
-            this.tarefaSet = new HashSet<>();
-        }
-
-        public void adicionarTarefa(String descricao) {
-            tarefaSet.add(new Tarefa(descricao));
-        }
-
-        public void removerTarefa(String descricao) {
-            Tarefa tarefaParaRemover = null;
-            for (Tarefa t : tarefaSet) {
-                if (t.getDescricao().equalsIgnoreCase(descricao)) {
-                    tarefaParaRemover = t;
-                    break;
-                }
-            }
-            tarefaSet.remove(tarefaParaRemover);
-        }
-
-        public void exibirTarefas(){
-            System.out.println(tarefaSet);
-        }
-
-        public int contarTarefas(){
-            return tarefaSet.size();
-        }
-
-        public Set<Tarefa> obterTarefasConcluidas() {
-            Set<Tarefa> tarefasConcluidas = new HashSet<>();
-            for (Tarefa t : tarefaSet) {
-                if (t.isTarefaConcluida()) {
-                    tarefasConcluidas.add(t);
-                }
-            }
-            return tarefasConcluidas;
-        }
-
-        public Set<Tarefa> obterTarefasPendentes() {
-            Set<Tarefa> tarefasNaoConcluidas = new HashSet<>();
-            for (Tarefa t : tarefaSet) {
-                if (!t.isTarefaConcluida()) {
-                    tarefasNaoConcluidas.add(t);
-                }
-            }
-            return tarefasNaoConcluidas;
-        }
-
-        public void marcarTarefaConcluida(String descricao) {
-            for (Tarefa t : tarefaSet) {
-                if (t.getDescricao().equalsIgnoreCase(descricao)) {
-                    t.setTarefaConcluida(true);
-                }
-            }
-        }
-
-        public void marcarTarefaPendente(String descricao) {
-            Tarefa tarefaParaMarcarComoPendente = null;
-            for (Tarefa t : tarefaSet) {
-                if (t.getDescricao().equalsIgnoreCase(descricao)) {
-                    tarefaParaMarcarComoPendente = t;
-                    break;
-                }
-            }
-        }
-
-        public void limparListaTarefas() {
-            if (tarefaSet.isEmpty()) {
-                System.out.println("A lista já está vazia!");
-            } else {
-                tarefaSet.clear();
-            }
-        }
-    }
-
     public static void main(String[] args) {
         // Criando uma instância da classe ListaTarefas
         ListaTarefas listaTarefas = new ListaTarefas();
@@ -202,17 +119,4 @@ import java.util.Set;
         listaTarefas.exibirTarefas();
     }
 }
-
-
-
-
-
-
-
-
-}
-
-
-
-
 
