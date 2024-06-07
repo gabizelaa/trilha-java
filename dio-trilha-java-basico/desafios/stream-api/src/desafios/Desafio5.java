@@ -14,10 +14,7 @@ public class Desafio5 {
                 .filter(n -> n > 5)
                 .mapToDouble(n -> (double) n);
 
-        // Calcula a média usando OptionalDouble.orElse() para lidar com a possibilidade de lista vazia
         OptionalDouble media = acimaDeCinco.average();
-        if(media.isPresent()){
-            System.out.println(media.getAsDouble());
-        }
+            System.out.println(media);
     }
 }
