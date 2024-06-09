@@ -2,19 +2,24 @@ package desafios;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.OptionalDouble;
-import java.util.stream.DoubleStream;
+import java.util.stream.Collectors;
 
 public class Desafio5 {
     public static void main(String[] args) {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
-        // Filtra apenas os números maiores que 5 e converte para DoubleStream
-        DoubleStream acimaDeCinco = numeros.stream()
+        List<Integer> maioresQueCinco = numeros.stream()
                 .filter(n -> n > 5)
-                .mapToDouble(n -> (double) n);
+                .collect(Collectors.toList());
 
-        OptionalDouble media = acimaDeCinco.average();
-            System.out.println(media);
+        if (maioresQueCinco.isEmpty()) {
+            System.out.println("Não há números maiores que 5 na lista");
+        } else {
+            double media = maioresQueCinco.stream()
+                    .mapToDouble(Integer::doubleValue)
+                    .average()
+                    .getAsDouble();
+            System.out.println("Média dos números maiores que 5: " + media);
+        }
     }
 }

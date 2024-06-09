@@ -5,15 +5,19 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Desafio3 {
-    public static boolean todosPositivos(List<Integer> numeros) {
-        Predicate<Integer> isPositive = numero -> numero > 0;
-        return numeros.stream().allMatch(isPositive);
-    }
-
     public static void main(String[] args) {
-        List<Integer> lista = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
-        boolean todosPositivos = todosPositivos(lista);
+        Predicate<Integer> isPositive = numero -> {
+            if (numero >= 0){
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        boolean todosPositivos = numeros.stream()
+                        .allMatch(isPositive);
 
         System.out.println("Todos os números são positivos: " + todosPositivos);
     }

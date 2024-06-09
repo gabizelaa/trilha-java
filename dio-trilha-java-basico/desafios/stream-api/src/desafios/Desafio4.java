@@ -1,8 +1,6 @@
 package desafios;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-
 
 public class Desafio4 {
     public static void main(String[] args) {
