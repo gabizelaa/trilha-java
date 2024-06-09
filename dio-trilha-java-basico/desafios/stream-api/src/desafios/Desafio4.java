@@ -10,7 +10,7 @@ public class Desafio4 {
 
         List<Integer> pares = numeros.stream()
                 .filter(n -> n % 2 == 0)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("Lista de pares: " + pares);
     }

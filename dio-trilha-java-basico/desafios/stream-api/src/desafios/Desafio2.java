@@ -11,7 +11,7 @@ public class Desafio2 {
 
         List<Integer> numerosPares = numeros.stream()
                 .filter(numero -> numero % 2 == 0)
-                .collect(Collectors.toList());
+                .toList();
 
         int somaPares = numerosPares.stream()
                 .mapToInt(numero -> numero)
