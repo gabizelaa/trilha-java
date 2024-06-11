@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/desafios/banco-digital/banco-digital.iml" filepath="$PROJECT_DIR$/desafios/banco-digital/banco-digital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banco-digital/banco-digital.iml" filepath="$PROJECT_DIR$/banco-digital/banco-digital.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/collections/collections.iml" filepath="$PROJECT_DIR$/desafios/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/conta-terminal/conta-terminal.iml" filepath="$PROJECT_DIR$/desafios/conta-terminal/conta-terminal.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/controle-fluxo/controle-fluxo.iml" filepath="$PROJECT_DIR$/desafios/controle-fluxo/controle-fluxo.iml" />
