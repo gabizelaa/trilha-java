@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/desafios/banco-digital/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Área de trabalho/banco-digital" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../Área de trabalho/banco-digital/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafios/banco-digital/banco-digital-dio/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

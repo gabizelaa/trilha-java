@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/desafios/collections/collections.iml" filepath="$PROJECT_DIR$/desafios/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/conta-terminal/conta-terminal.iml" filepath="$PROJECT_DIR$/desafios/conta-terminal/conta-terminal.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/controle-fluxo/controle-fluxo.iml" filepath="$PROJECT_DIR$/desafios/controle-fluxo/controle-fluxo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/desafios/desafio-poo/desafio-poo.iml" filepath="$PROJECT_DIR$/desafios/desafio-poo/desafio-poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafios/poo/desafio-poo/desafio-poo.iml" filepath="$PROJECT_DIR$/desafios/poo/desafio-poo/desafio-poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafio-poo-2/desafio-poo-2.iml" filepath="$PROJECT_DIR$/desafio-poo-2/desafio-poo-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" filepath="$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" />
       <module fileurl="file://$PROJECT_DIR$/desafios/stream-api/stream-api.iml" filepath="$PROJECT_DIR$/desafios/stream-api/stream-api.iml" />
     </modules>
